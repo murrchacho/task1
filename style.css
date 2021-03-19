@@ -1,11 +1,12 @@
 body{
-    background-color: #1c212c;
+    background: linear-gradient(to bottom, #1c212c, #151922);
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 h1{
     color: white;
-    margin: 0 0 20 0;
+    margin: 50px 0 0 0;
     padding: 0;
 }
 .pseudoParent{
@@ -21,40 +22,67 @@ h1{
     overflow: auto;
 }
 .loginPlate{
+    position: absolute;
     width: 300px;
-    height: 350px;
-    background: #161822;
+    height: 400px;
+    background: linear-gradient(to bottom,#161822, #13141d );
     border-radius: 10px;
     text-align: center;
     display: block;
     font-family:Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 20px #00000070 ;
 }
 .loginInputs{
     text-align: center;
     display: block;
     list-style: none;
     width: 100%;
-    margin: 0;
+    margin: 50px 0 0 0;
     padding: 0;
 }
-.loginInputs input[type="text"], .loginInputs input[type = "password"] {
+.loginInputs input[type="text"]{
     border:0;
     width: 200px;
     height: 40px;
     background: none;
-    margin: 10px;
+    margin: 10 0 0 0;
     text-align: center;
     border: 2px solid #ffb142;
     color: white;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 10px;
     outline: none;
+}
+.loginInputs input[type = "password"] {
+    border:0;
+    width: 200px;
+    height: 40px;
+    background: none;
+    margin: 10px 0 0 0;
+    text-align: center;
+    border: 2px solid #ffb142;
+    color: white;
+    border-radius: 10px 10px 10px 0;
+    outline: none;
+}
+.loginInputs input[type="email"]{
+    border:0;
+    width: 200px;
+    height: 40px;
+    background: none;
+    margin: 10px 0 0 600px;
+    text-align: center;
+    border: 2px solid #ffb142;
+    color: white;
+    border-radius: 10px 10px 0 10px;
+    outline: none;
+    opacity: 0;
 }
 .loginInputs input[type="submit"]{
     border:0;
     width: 150px;
     height: 40px;
     background: none;
-    margin: 10px;
+    margin: 70px 0px 0 0px;
     text-align: center;
     border: 2px solid #5e49ac;
     color: white;
@@ -63,8 +91,42 @@ h1{
     cursor: pointer;
 }
 .loginInputs input[type="submit"]:hover{
-    background: #5e49ac;
+    background: linear-gradient(to bottom,#5e49ac, #56429c );
+    border: none;
+}
+.loginInputs input[type="submit"]:active{
+    background: #3f3072 ;
+    border: none;
+    color: #ececec;
 }
 .loginPlateContent{
     position: absolute;
+}
+.toRegistration{
+    padding: 0;
+    position: absolute;
+    margin: 320 0 0 0px;
+}
+.toRegistration input[type="submit"]{
+    opacity: 0.5;
+    cursor: pointer;
+    border:0;
+    padding: 0;
+    height: 20px;
+    width: 100px;
+    background: none;
+    text-align: center;;
+    color: white;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+.toRegistration input[type="submit"]:hover{
+    opacity: 1;
+}
+.toRegistration input[type="submit"]:active .loginInputs input[type="email"]{
+    opacity: 1;
+    margin: 0;
+}
+.toRegistration input[type="submit"]:active{
+    opacity: 0.8;
 }

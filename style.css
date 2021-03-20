@@ -69,20 +69,19 @@ h1{
     width: 200px;
     height: 40px;
     background: none;
-    margin: 10px 0 0 600px;
+    margin: 10px 0 0 0px;
     text-align: center;
     border: 2px solid #ffb142;
     color: white;
     border-radius: 10px 10px 0 10px;
     outline: none;
-    opacity: 0;
 }
 .loginInputs input[type="submit"]{
     border:0;
     width: 150px;
     height: 40px;
     background: none;
-    margin: 70px 0px 0 0px;
+    margin: 50px 0px 0 0px;
     text-align: center;
     border: 2px solid #5e49ac;
     color: white;
@@ -90,6 +89,20 @@ h1{
     outline: none;
     cursor: pointer;
 }
+.loginInputs input[type="submit"]{
+    border:0;
+    width: 150px;
+    height: 40px;
+    background: none;
+    margin: 50px 0px 0 0px;
+    text-align: center;
+    border: 2px solid #5e49ac;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
 .loginInputs input[type="submit"]:hover{
     background: linear-gradient(to bottom,#5e49ac, #56429c );
     border: none;
